@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+  color: #fff
+}
+
+.star, h1 {
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #959eac;
+  letter-spacing: .5px;
+  line-height: 1.5;
+}
+
+.main-container {
+  width: 500px;
+  height: auto;
+  margin: 8rem auto;
+  padding: 0.8rem;
+  background-color: #252d37;
+  border-radius: 2.8rem;
+}
+
+form {
+  padding: 2rem;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+label {
+  display: block; 
+  padding: 5px; 
+  position: relative; 
+  padding-left: 20px;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  border: 1px solid #252d37;
+  background-color: #373f4a;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  font-size: .8rem;
+  padding: 1rem;
+  margin: 0rem -2rem;
+  cursor: pointer;
+}
+
+label span:hover{
+  background-color: #7c8798;
+}
+
+input:checked + span {
+  background: #fb7413; 
+  border-color: #fb7413;
+}
+
+.card{
+  display: none;
+  width: 100%;
+  max-width: 30vw;
+  background-color: #252d37;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  gap: 1.7rem;
+}
+
+.message {
+  background-color: #373f4a;
+  color: #fb7413;
+  width: 240px;
+  line-height: 1;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+
+.tks-active{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tks-description,
+.tks-title {
+  margin-top: -.8rem;
+  width: 240px;
+}
+
+.form-none {
+  display: none;
+}
+
+.btn{
+  width: 100%;
+  padding: 1rem;
+  margin-top: 4.5rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #fb7413;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:#fff;
+  color: #fb7413;
+}
+
+@media(max-width: 520px) {
+  .main-container {
+    width: auto;
+    height: auto;
+    margin: 10vh 0.8rem;
+    background-color: #252d37;
+    border-radius: 2.8rem;
+    padding: 0rem;
+  }
+}
